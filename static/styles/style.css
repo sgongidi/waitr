@@ -1,0 +1,118 @@
+html, body {
+    /* background-color: #EEFDF6; */
+    background-color: #E4FEFF
+}
+
+body{
+    margin-top: 70px;
+}
+
+.homebtn {
+    color: rgb(40, 78, 85);
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+
+.navbar {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #10AC84, rgb(40, 78, 85));
+    padding: 15px;
+    width: calc(100vw - 30px);
+    font-size: 40px;
+    box-shadow: 0px 2px 5px 0px #666;
+}
+
+.navbar .navbtn {
+    font-family: Arial;
+    text-decoration: none;
+    color: #FFF;
+    float: right;
+    padding: 12px 20px 12px 15px;
+    font-size: 16px;
+}
+
+.content {
+    position: fixed;
+    margin-top: 15px;
+}
+
+.content p {
+    font-family: Arial;
+    text-decoration: none;
+    color: #111111;
+    font-size: 20px;
+    margin: 10px 0px 20px;
+    padding: 10px;
+}
+
+.content .contentbtn {
+    margin: 10px;
+    font-family: Arial;
+    text-decoration: none;
+    text-align: center;
+    color: #111111;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #10AC84;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 2px 5px 0px #666;
+}
+
+.contentinput {
+    padding: 10px;
+    margin: 5px;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.contentbtn:hover{
+    background-color: #619C86;
+}
+
+.search-area {
+    margin-top: 125px;
+    width: 100wv;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-area form {
+    box-shadow: 0 2px 5px 0px #666;
+    background: #FFF;
+    border-radius: 30px;
+}
+
+.search-area .searchbar {
+    outline: none;
+    margin: 0;
+    padding: 2px 2px 2px 20px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    font-size: 30px;
+    
+  }
+
+.search-area .searchbar::placeholder{
+    color: #d3d3d3;
+}
+
+.search-area .searchbttn {
+    outline: none;
+    margin: 0;
+    font-size: 30px;
+    padding: 2px 20px 2px 2px;
+    border: none;
+    background: #FFF;
+    border-radius: 0 30px 30px 0;
+}
+
+.search-area .searchbttn:hover {
+    cursor: pointer;
+}
