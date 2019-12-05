@@ -11,11 +11,3 @@ router.get('/style', (req, res) => { // style
 router.get('/', (req, res) => {  // home page
   res.sendFile(path.resolve('site/index.html'));
 });
-
-router.get('/vlogin', (req, res) => {  // venue login page
-  res.sendFile(path.resolve('site/venue_login.html'));
-});
-
-router.get('/vsignup', (req, res) => {  // venue signup page
-  res.sendFile(path.resolve('site/venue_signup.html'));
-});

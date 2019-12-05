@@ -4,6 +4,7 @@
         <title>Waitr</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./style">
         <!-- <script src="./scripts.js"></script> -->
     </head>
@@ -13,9 +14,16 @@
             <a class="navbtn" href="./vlogin">Venue Login</a>
         </div>
 
-        <div class="content">
-            <!-- <p>Select Login Type:</p> -->
-            <!-- <a class="contentbtn" href="./clogin">Customer Login</a> -->
+        <div class="search-area">
+            <form method="POST" id="search">
+                <div> 
+                    <input class="searchbar" name="search" type="text" placeholder="Search Venues">
+                </div>
+                
+                <div>
+                    <!-- <button class="searchbtn" type="submit" id="search_submit">Submit</button> -->
+                </div>
+            </form>
         </div>
     </body>
 </html>
