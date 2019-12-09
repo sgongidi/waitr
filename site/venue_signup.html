@@ -10,15 +10,19 @@
     <body>
         <div class="navbar">
             <a class="homebtn" href="/">Waitr.</a>
-            <a class="navbtn" href="./vlogin">Login</a>
+            <a class="navbtn" href="./vlogin">Venue Login</a>
         </div>
-        <h2>Venue Signup</h2>
-        <form class="content" method="POST" id="vsignup">
-            <input placeholder="Username" type="text" name="uname"><br>
-            <input placeholder="Password" type="password" name="pass"><br>
-            <input placeholder="Venue Name" type="text" name="vname"><br>
-            <textarea placeholder="A short description of your venue." name="desc"></textarea><br>
-            <!-- <button type="submit" id="vsignup_submit">Sign-Up</button> -->
-        </form>
+
+        <div class="content">
+            <h2>Venue Signup</h2>
+
+            <form method="POST" id="vsignup">
+                <input class="contentInput" placeholder="Venue Name" type="text" name="vname"><br>
+                <input class="contentInput" placeholder="Username" type="text" name="uname"><br>
+                <input class="contentInput" placeholder="Password" type="password" name="pass"><br>
+                <textarea class="contentInput" placeholder="A short description of your venue" name="desc"></textarea><br>
+                <!-- <button type="submit" id="vsignup_submit">Sign-Up</button> -->
+            </form>
+        </div>
     </body>
 </html>
