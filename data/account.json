@@ -1,2 +1,20 @@
 {
+  "users": {
+    "cookieuser": {
+      "passwordHash": "$2a$10$dg6MLOOH086ZmaQctNidUuvIYtE729/TJ1/9wAzZPWGwLYgMuPwD6",
+      "data": {
+        "vid": "txvmxpixg4i",
+        "venue": "testvenue",
+        "description": "descr"
+      }
+    },
+    "test": {
+      "passwordHash": "$2a$10$lWulTHRKcmdAa87qYYXAdeSvcy5PSagJpQnMUpqaD2O/PZ1NstOpS",
+      "data": {
+        "vid": "hxemxmlzfx",
+        "venue": "venue",
+        "description": "description"
+      }
+    }
+  }
 }

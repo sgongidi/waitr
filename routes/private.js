@@ -6,7 +6,7 @@ import {authenticateUser} from "../middlewares/auth";
 
 export const router = express.Router();
 export const prefix = '/private';
-
+const path = require('path');
 const {privateStore} = require('../data/DataStore');
 
 /**
@@ -14,6 +14,10 @@ const {privateStore} = require('../data/DataStore');
  * to be made from an authenticated user.
  */
 router.use(authenticateUser);
+
+router.get('/manage', (req, res) => {
+  //console.log(req.headers.authorization);
+});
 
 router.get('/*', parseGet, function (req, res) {
   const result = req.handleGet(privateStore);

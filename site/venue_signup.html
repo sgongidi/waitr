@@ -3,9 +3,10 @@
         <title>Venue Sign-Up</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./style">
-        <!-- <script src="./scripts.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./scripts"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
     <body>
         <div class="navbar">
@@ -21,7 +22,7 @@
                 <input class="contentInput" placeholder="Username" type="text" name="uname"><br>
                 <input class="contentInput" placeholder="Password" type="password" name="pass"><br>
                 <textarea class="contentInput" placeholder="A short description of your venue" name="desc"></textarea><br>
-                <!-- <button type="submit" id="vsignup_submit">Sign-Up</button> -->
+                <button type="submit" class="contentbtn" id="vsignup_submit">Sign-Up</button>
             </form>
         </div>
     </body>

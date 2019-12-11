@@ -23,7 +23,6 @@ body {
     padding: 15px;
     width: calc(100vw - 30px);
     font-size: 40px;
-    /* box-shadow: 0px 2px 5px 0px #666; */
 }
 
 .navbar .navbtn {
@@ -65,10 +64,10 @@ h2 {
     color: #FFF;
     padding: 12px;
     font-size: 16px;
-    background-color: #10AC84;
+    /* background-color: #10AC84; */
+    background-color: gray;
     border-radius: 8px;
     border: none;
-    box-shadow: 0px 2px 5px 0px #666;
 }
 
 .contentinput {
@@ -92,7 +91,7 @@ h2 {
     align-items: center;
 }
 
-.search-area .searchbar {
+.searchbar {
     outline: none;
     color: #FFF;
     margin: 0;
@@ -103,21 +102,19 @@ h2 {
     font-size: 30px;
   }
 
-/* .search-area .searchbar::placeholder{
-    color: #d3d3d3;
-} */
-
-.search-area .searchbttn {
+.searchbtn {
+    color: #10AC84;
     outline: none;
     margin: 0;
+    margin-left: -5px;
     font-size: 30px;
-    padding: 2px 20px 2px 2px;
+    padding: 5px 20px 5px 5px;
     border: none;
     background-color: #262626;;
     border-radius: 0 30px 30px 0;
 }
 
-.search-area .searchbttn:hover {
+.searchbtn:hover {
     cursor: pointer;
 }
 
@@ -127,6 +124,7 @@ textarea {
     height: 100px;
     background-color: #262626;
     border: none;
+    color: #FFF;
 }
 
 input {
