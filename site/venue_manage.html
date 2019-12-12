@@ -6,12 +6,14 @@
         <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="./scripts"></script>
     </head>
     <body onload="manageInfo()">
         <div class="navbar">
             <a class="homebtn" href="/">Waitr.</a>
+            <span>Get in line online!</span>
             <a class="navbtn" href="/" onclick="logout()">Log out</a>
         </div>
 
@@ -19,7 +21,7 @@
                 <h2>Venue Manager</h2>
                 <ol id="queue">
                 </ol>
-                <button id="openTable" class="contentbtn" onclick="openTable()">Open Table</button>
+                <button id="openTable" class="contentbtn" onclick="openTable()">Next</button>
             </div>
     </body>
 </html>

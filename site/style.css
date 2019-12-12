@@ -25,6 +25,13 @@ body {
     font-size: 40px;
 }
 
+span {
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
 .navbar .navbtn {
     font-family: Arial;
     font-weight: bold;

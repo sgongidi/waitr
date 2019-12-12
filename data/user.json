@@ -1,18 +1,2 @@
-{ "venues": {
-    "venue1": {
-        "description": "Venue1 description",
-        "queue": [
-            {"1": "name1"},
-            {"2": "name2"},
-            {"3": "name3"}
-        ]
-    },
-    "venue2": {
-        "description": "Venue2 description",
-        "queue": [
-            {"1": "name1"},
-            {"2": "name2"}
-        ]
-    }
-}
+{
 }

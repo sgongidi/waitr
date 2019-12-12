@@ -41,6 +41,11 @@ router.get('/vsignup', (req, res) => {  // venue signup page
   res.sendFile(path.resolve('site/venue_signup.html'));
 });
 
+router.get('/venue/:vid', (req, res) => {
+  res.sendFile(path.resolve('site/customer_queue.html'));
+  //res.send(req.params['vid']);
+});
+
 router.get('/*', parseGet, function (req, res) {
   const result = req.handleGet(publicStore);
   if (typeof result !== 'undefined') {

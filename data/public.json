@@ -1,7 +1,6 @@
 {
-    "venues": [
-        "venue1",
-        "venue2",
-        "venue3"
-    ]
+  "venues": {
+    "publictest": [],
+    "yuh": []
+  }
 }

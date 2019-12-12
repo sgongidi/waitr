@@ -10,7 +10,7 @@ export const prefix = '/account';
 const saltRounds = 10;
 
 const {accountStore} = require('../data/DataStore');
-
+const {publicStore} = require('../data/DataStore');
 
 /**
  * This route requires a valid JWT token.
@@ -86,6 +86,7 @@ router.post('/create', function (req, res) {
       passwordHash: hash,
       data: req.body.data
     });
+    publicStore.set(`venues.${name}`, []);
     res.send({data: userFilter(accountStore.get(`users.${name}`)), status: 'Successfully made account'});
   });
 
