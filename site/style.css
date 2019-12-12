@@ -132,3 +132,13 @@ input {
     border: none;
     color: #FFF;
 }
+
+.ui-menu-item {
+    list-style-type: none;
+    background: #333;
+    margin: 0;
+    padding: 7px 0 7px 20px;
+    font-size: 20px;
+    width: 350px
+}
+

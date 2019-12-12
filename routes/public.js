@@ -13,6 +13,14 @@ router.get('/', (req, res) => {  // home page
   res.sendFile(path.resolve('site/index.html'));
 });
 
+router.get('/venues', (req, res) => {
+  res.send(publicStore.get('venues'));
+});
+
+router.get('/queue', (req, res) => {  // queue page
+  res.sendFile(path.resolve('site/customer_queue.html'));
+});
+
 router.get('/style', (req, res) => { // style
   res.sendFile(path.resolve('site/style.css'));
 });

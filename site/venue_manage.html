@@ -6,17 +6,20 @@
         <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="./scripts"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./scripts"></script>
     </head>
-    <body>
+    <body onload="manageInfo()">
         <div class="navbar">
             <a class="homebtn" href="/">Waitr.</a>
+            <a class="navbtn" href="/" onclick="logout()">Log out</a>
         </div>
 
         <div class="content">
                 <h2>Venue Manager</h2>
-                
+                <ol id="queue">
+                </ol>
+                <button id="openTable" class="contentbtn" onclick="openTable()">Open Table</button>
             </div>
     </body>
 </html>

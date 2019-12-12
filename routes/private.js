@@ -15,8 +15,16 @@ const {privateStore} = require('../data/DataStore');
  */
 router.use(authenticateUser);
 
-router.get('/manage', (req, res) => {
-  //console.log(req.headers.authorization);
+router.get('/manage', (req, res) => { // send queue for venue 
+  let vid = req.headers.vid;
+  let queue = privateStore.get(`${vid}`);
+  res.send(queue);
+});
+
+router.post('/manage', (req, res) => { // update queue for venue
+  let vid = req.body.vid;
+  let queue = req.body.queue;
+  privateStore.set(`${vid}`, queue);
 });
 
 router.get('/*', parseGet, function (req, res) {
