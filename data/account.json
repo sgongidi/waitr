@@ -1,19 +1,19 @@
 {
   "users": {
-    "owo": {
-      "passwordHash": "$2a$10$/4hm//N.54AELj7ZEAmL4OPEgxKIi8it6cuNKBCBznEJmDws0XZru",
-      "data": {
-        "vid": "qhb9tkc48ea",
-        "venue": "owo",
-        "description": "owo"
-      }
-    },
     "test": {
       "passwordHash": "$2a$10$JCAJBGB.oQXUojADfwS97ev7tjIFCF8URMcCHLkJMBJnI7VOKzCn.",
       "data": {
         "vid": "7t1nvudepo7",
         "venue": "MyRestaurant",
         "description": "A short description."
+      }
+    },
+    "user": {
+      "passwordHash": "$2a$10$i7lcF3E5Lq5ClQuC9XRZrOZ4sTLd3QbM.0fOMp8m.eSIUoq0wJbBC",
+      "data": {
+        "vid": "mrupdcsbk7",
+        "venue": "MosEisleyCantina",
+        "description": "A spaceport on tatooine."
       }
     }
   }

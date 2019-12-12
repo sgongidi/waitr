@@ -48,20 +48,21 @@ router.get('/venues/:vid', (req, res) => {
   }
 });
 
-router.post('venues/:vid', (req, res) => {
+router.post('/submit', (req, res) => {
   let name = req.body.name;
-  let ven = req.params['vid'];
-  let accts = accountStore.get('Users');
+  let ven = req.body.vid;
+  let accts = accountStore.get('users');
   let vid;
-
-  for (let acct in accts) {
-    if(acct.data.venue === ven) {
-      vid = acct.data.vid;
+  for (let acct of Object.keys(accts)) {   
+    if(accts[acct].data.venue === ven) {
+      vid = accts[acct].data.vid;
     }
   }
   let queue = privateStore.get(`${vid}`);
   queue.push(name);
   privateStore.set(`${vid}`, queue);
+  let pos = queue.length;
+  res.send({pos});
 });
 
 router.get('/venues', (req, res) => {

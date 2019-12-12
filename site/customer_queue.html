@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../style">
-        <!-- <script src="./scripts"></script> -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="../scripts"></script>
     </head>
     <body>
         <div class="navbar">
@@ -16,10 +18,9 @@
         
         <div class="content">
             <h2>Customer Queue</h2>
-            <!-- method post -->
             <form id="newCustomer">
                 <input class="contentinput" id="newCustomerName" placeholder="Enter your name" type="text"><br>
-                <button type="submit" class=contentbtn id="customerSubmit">Submit</button>
+                <button type="submit" class=contentbtn id="customerSubmit">Add to queue</button>
             </form>
         </div>
     </body>

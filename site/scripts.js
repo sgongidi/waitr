@@ -26,22 +26,30 @@ $(function() {
         getCustomerPage(venue);
     });
 
-    // $('#newCustomer').submit((e) => {
-    //     e.preventDefault();
-    //     let name = $('newCustomerName').val();
-    //     let venue = window.location.href;
-    //     console.log(venue);
-    //     // customerSubmit(name, venue);
-    // });
+    $('#newCustomer').submit((e) => {
+        e.preventDefault();
+
+        const name = $('#newCustomerName').val();
+        let venue = window.location.href.slice(29);
+        let pos = customerSubmit(name, venue);
+        // console.log(pos);
+        let queuePosition = $(`<div>You are in position 10!</div>`);
+        $('#newCustomer').replaceWith(queuePosition);
+    });
 });
 
 async function customerSubmit(name, venue) {
     try {
         const response = await axios({
             method: "post",
-            url: `http://localhost:3000/venues/${venue}`,
-            data: name
-        });
+            url: `http://localhost:3000/submit`,
+            data: {
+                "name": name,
+                "vid": venue
+            }
+        })
+        return response.data.pos;
+        
     } catch(e) {
         console.log(e);
     }
