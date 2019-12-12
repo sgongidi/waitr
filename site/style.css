@@ -143,6 +143,7 @@ input {
 .ui-menu-item {
     list-style-type: none;
     background: #333;
+    /* border: none; */
     margin: 0;
     padding: 7px 0 7px 20px;
     font-size: 20px;

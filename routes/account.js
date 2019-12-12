@@ -11,7 +11,7 @@ const saltRounds = 10;
 
 const {accountStore} = require('../data/DataStore');
 const {publicStore} = require('../data/DataStore');
-
+const {privateStore} = require('../data/DataStore');
 /**
  * This route requires a valid JWT token.
  * This means that if you hit this route with a valid JWT then
@@ -86,7 +86,12 @@ router.post('/create', function (req, res) {
       passwordHash: hash,
       data: req.body.data
     });
-    publicStore.set(`venues.${name}`, []);
+    const venues = publicStore.get('venues');
+    venues.push(req.body.data.venue);
+    publicStore.set('venues', venues);
+   
+    const vid = req.body.data.vid;
+    privateStore.set(`${vid}`, []);
     res.send({data: userFilter(accountStore.get(`users.${name}`)), status: 'Successfully made account'});
   });
 

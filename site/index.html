@@ -11,7 +11,7 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="./scripts"></script>
     </head>
-    <body>
+    <body onload="autocomp()">
         <div class="navbar">
             <a class="homebtn" href="/">Waitr.</a>
             <span>Get in line online!</span>
@@ -20,8 +20,8 @@
 
         <div class="search-area">
             <form method="GET" id="search">
-                <input id="searchbar" class="searchbar" name="search" type="text" placeholder="Search Venues">
-                <button class="searchbtn" type="submit" id="search_submit"><i class="fa fa-search"></i></button>
+                <input id="searchbar" class="searchbar" type="text" placeholder="Search Venues">
+                <button class="searchbtn" type="submit" id="searchbtn"><i class="fa fa-search"></i></button>
             </form>
         </div>
     </body>

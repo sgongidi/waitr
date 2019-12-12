@@ -1,51 +1,19 @@
 {
   "users": {
-    "cookieuser": {
-      "passwordHash": "$2a$10$dg6MLOOH086ZmaQctNidUuvIYtE729/TJ1/9wAzZPWGwLYgMuPwD6",
+    "owo": {
+      "passwordHash": "$2a$10$/4hm//N.54AELj7ZEAmL4OPEgxKIi8it6cuNKBCBznEJmDws0XZru",
       "data": {
-        "vid": "txvmxpixg4i",
-        "venue": "testvenue",
-        "description": "descr"
+        "vid": "qhb9tkc48ea",
+        "venue": "owo",
+        "description": "owo"
       }
     },
     "test": {
-      "passwordHash": "$2a$10$lWulTHRKcmdAa87qYYXAdeSvcy5PSagJpQnMUpqaD2O/PZ1NstOpS",
+      "passwordHash": "$2a$10$JCAJBGB.oQXUojADfwS97ev7tjIFCF8URMcCHLkJMBJnI7VOKzCn.",
       "data": {
-        "vid": "hxemxmlzfx",
-        "venue": "venue",
-        "description": "description"
-      }
-    },
-    "myuser": {
-      "passwordHash": "$2a$10$ulsy9.dD9wlCKMkGNYIwJO58o12OPx/N4vDCgJ13OGhPqwwVj4tY.",
-      "data": {
-        "vid": "eo4ekwtaf2",
-        "venue": "MyVenue",
-        "description": "Short description"
-      }
-    },
-    "chilis": {
-      "passwordHash": "$2a$10$ky.YyOZiNLs0KxCA8f7VEukBU8TuZ5YkSQ1ry4TCNBD3PwFRlveMu",
-      "data": {
-        "vid": "2t34ov5a0u9",
-        "venue": "Chilis",
-        "description": "hi welcome to  chilis"
-      }
-    },
-    "publictest": {
-      "passwordHash": "$2a$10$dfpwftyViJNslRYyxrTla.K//mdS9CvZBi55nQAtGr0yZFjSUFksW",
-      "data": {
-        "vid": "fuaq0ma5zhh",
-        "venue": "publicstoretest",
-        "description": "desc"
-      }
-    },
-    "yuh": {
-      "passwordHash": "$2a$10$yTOH9Wd3FdIkuu6.B4NDh.I9j6jVptnxr5fYG9rz3jLIbx7k8saA.",
-      "data": {
-        "vid": "imqevsiajjc",
-        "venue": "yuh",
-        "description": "yuh"
+        "vid": "7t1nvudepo7",
+        "venue": "MyRestaurant",
+        "description": "A short description."
       }
     }
   }

@@ -1,17 +1,6 @@
 $(function() {
     const $signupForm = $('#vsignup');
     const $loginForm = $('#vlogin');
-    const $newCustomer = $('#newCustomer');
-
-    try {
-        getVenues().then((resp) => { // autocomplete search
-            $('#searchbar').autocomplete({
-                source: resp
-            });
-        });
-    } catch(e) {
-        console.log(e);
-    }
 
     $signupForm.submit((e) => { // submit signup form
         e.preventDefault();
@@ -31,45 +20,47 @@ $(function() {
         login(data.uname, data.pass);
     });
 
-    $newCustomer.submit((e) => {
-        e.preventDefault();
-        const name = $('newCustomerName').val();
-        addToQueue(name, venue); // TODO: venue
-    });
-
-    $('#searchbtn').submit((e) => {
+    $('#search').submit((e) => {
         e.preventDefault();
         const venue = $('#searchbar').val();
-        console.log(venue);
         getCustomerPage(venue);
     });
+
+    // $('#newCustomer').submit((e) => {
+    //     e.preventDefault();
+    //     let name = $('newCustomerName').val();
+    //     let venue = window.location.href;
+    //     console.log(venue);
+    //     // customerSubmit(name, venue);
+    // });
 });
 
-async function getCustomerPage(venue) {
+async function customerSubmit(name, venue) {
     try {
         const response = await axios({
-            method: "get",
-            url: `http://localhost:3000/venues/${venue}`
+            method: "post",
+            url: `http://localhost:3000/venues/${venue}`,
+            data: name
         });
-        console.log(response);
     } catch(e) {
         console.log(e);
     }
 }
 
-async function addToQueue(name, venue) {
-    try {
-        const response = await axios({
-            method: "post",
-            url: "http://localhost:3000/addQueue",
-            withCredentials: true,
-            data: {
-                customerName: name,
-                venueName: venue
-            },
+function autocomp() { // autocomplete search using jquery-ui api
+    getVenues().then((resp) => {
+        $('#searchbar').autocomplete({
+            source: resp,
+            delay: 250 // debouncing
         });
+    });
+}
+
+function getCustomerPage(venue) {
+    try {
+        window.location.href = `http://localhost:3000/venues/${venue}`;
     } catch(e) {
-        alert(e);
+        console.log(e);
     }
 }
 
@@ -85,10 +76,6 @@ async function getVenues() {
     } catch(e) {
         console.log(e);
     }
-}
-
-function randomString() {
-    return Math.random().toString(36).slice(2);
 }
 
 async function redirect() {
@@ -197,7 +184,7 @@ async function manageInfo(){
     }
 }
 
-async function openTable() {
+async function next() {
     let vid = getCookie("vid");
     const first = $('#queue li').first().remove(); // remove first li
 
@@ -226,6 +213,10 @@ async function openTable() {
         }
     });
     manageInfo();
+}
+
+function randomString() {
+    return Math.random().toString(36).slice(2);
 }
 
 function logout() {

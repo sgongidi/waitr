@@ -1,6 +1,5 @@
 {
-  "venues": {
-    "publictest": [],
-    "yuh": []
-  }
+  "venues": [
+    "MyRestaurant"
+  ]
 }
