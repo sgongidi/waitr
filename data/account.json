@@ -15,6 +15,14 @@
         "venue": "MosEisleyCantina",
         "description": "A spaceport on tatooine."
       }
+    },
+    "myusername": {
+      "passwordHash": "$2a$10$ZJCJ0CYSJryt2OmpPuLHHe7lA/8UEKfVRRTG.Qygi/OmFK3226w2m",
+      "data": {
+        "vid": "sqjhdgxpl7n",
+        "venue": "MyVenue",
+        "description": "My Description"
+      }
     }
   }
 }

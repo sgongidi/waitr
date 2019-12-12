@@ -31,10 +31,10 @@ $(function() {
 
         const name = $('#newCustomerName').val();
         let venue = window.location.href.slice(29);
-        let pos = customerSubmit(name, venue);
-        // console.log(pos);
-        let queuePosition = $(`<div>You are in position 10!</div>`);
-        $('#newCustomer').replaceWith(queuePosition);
+        customerSubmit(name, venue).then((pos) => {
+            let queuePosition = $(`<div id="pos">You are in position ${pos}!</div>`);
+            $('#newCustomer').replaceWith(queuePosition); 
+        });
     });
 });
 
@@ -48,8 +48,7 @@ async function customerSubmit(name, venue) {
                 "vid": venue
             }
         })
-        return response.data.pos;
-        
+        return response.data.pos
     } catch(e) {
         console.log(e);
     }

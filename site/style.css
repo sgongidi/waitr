@@ -25,6 +25,10 @@ body {
     font-size: 40px;
 }
 
+#pos {
+    margin-left: 10px;
+}
+
 span {
     color: white;
     font-size: 13px;
