@@ -1,3 +1,4 @@
-# Waitr: Comp426 Final Project
+# Waitr
 
-A simple queuing platform
+## A customer queuing web app for restaurants
+
