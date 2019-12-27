@@ -98,7 +98,7 @@ async function redirect() {
         window.location.href = "http://localhost:3000/manage";
     } catch(e) {
         console.log(e);
-        // not logged in
+        window.location.href = "http://localhost:3000/account/login";
     }
 }
 
@@ -172,7 +172,6 @@ async function manageInfo(){
         window.location.href = "http://localhost:3000/vlogin"
     }
     
-    // implement fetch queue backend
     const response = await axios({
         method: "get",
         url: "http://localhost:3000/private/manage",
